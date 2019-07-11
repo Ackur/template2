@@ -1,0 +1,55 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'AGLettericaBoldBold';
+  src: url("../fonts/ag_letterica_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGSouvenir';
+  src: url("../fonts/agsouvenir_regular.ttf") format("truetype");
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .container {
+  width: 1024px;
+  height: 125px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url(../img/bg-hd-top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav .container menu {
+  padding-right: 70px;
+}
+
+nav .container menu a {
+  margin-right: 60px;
+  font-family: AGSouvenir, sans-serif;
+  font-size: 17px;
+  line-height: 58px;
+}
+/*# sourceMappingURL=style.css.map */
