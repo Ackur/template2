@@ -6,21 +6,87 @@
 a
     text-decoration: none
     color: #fff
-nav
-
-    .container
-        width: 1024px
-        height: 125px
-        margin: 0 auto
-        display: flex
-        justify-content: flex-end
-        background-image: url(../img/bg-hd-top.png)
-        background-repeat: no-repeat
-        background-position: center
-        menu
-            padding-right: 70px
-            a
-                margin-right: 60px
-                font-family: AGSouvenir, sans-serif
+.container
+    width: 1024px
+    margin: 0 auto
+header
+    background-image: url(../img/bg-body.png)
+    background-repeat: no-repeat
+    background-position: inherit
+    background-size: cover
+    nav
+        .container
+            height: 125px
+            display: flex
+            justify-content: flex-end
+            background-image: url(../img/bg-hd-top.png)
+            background-repeat: no-repeat
+            background-position: center
+            menu
+                padding-right: 70px
+                a
+                    margin-right: 60px
+                    font-family: AGSouvenir, sans-serif
+                    font-size: 17px
+                    line-height: 58px
+.hd-wrap
+    grid-template-columns: auto 320px
+    .header-form
+        position: relative
+        align-items: center
+        border: 6px solid #a7d1e6
+        border-radius: 20px
+        background: #299fca
+        margin-top: -40px
+        .decor-line
+            position: absolute
+            top: 25px
+            left: -20px
+            background-image: url(../img/online.png)
+            width: 227px
+            height: 40px
+            text-align: center
+            span
+                line-height: 40px
+                font-family: AGLettericaBoldBold, sans-serif
+                font-size: 21px
+                color: #ffffff
+        .hd-main-form
+            grid-template-columns: auto auto
+            grid-template-rows: repeat(5, max-content)
+            grid-gap: 10px
+            justify-content: center
+            margin-top: 60px
+            span
+                font-family: AGForeignerRomanMedium, sans-serif
                 font-size: 17px
-                line-height: 58px
+                color: #ffffff
+                font-weight: bold
+                align-self: center
+                justify-self: end
+                text-shadow: 0px -1px 2px #00455f
+            input, select, textarea
+                width: 170px
+                height: 30px
+                outline: none
+                padding: 0 10px
+                border: 3px solid #a7d1e6
+                border-radius: 7px
+                font-family: AGForeignerRomanMedium, sans-serif
+                font-size: 17px
+                color: #37a5ce
+.bottom-o
+    grid-column: 1/3
+    justify-self: end
+    border: none
+    background: #f2e709
+    border-radius: 7px
+    height: 33px
+    width: 100px
+    color: #64affc
+    font-family: AGLettericaBoldBold, sans-serif
+    font-size: 15px
+    cursor: pointer
+    display: block
+
+
