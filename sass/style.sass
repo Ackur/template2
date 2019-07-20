@@ -8,6 +8,7 @@ body
     max-width: 1280px
     margin: 0 auto
     width: 100%
+    color: #fff
 
 .grid
     display: grid
@@ -15,7 +16,7 @@ a
     text-decoration: none
     color: #fff
 .container
-    width: 1024px
+    width: 992px
     margin: 0 auto
 header
     background-image: url(../img/bg-body.png)
@@ -25,32 +26,30 @@ header
     .header-navbar
         .container
             height: 125px
-            display: flex
-            justify-content: flex-end
             background-image: url(../img/bg-hd-top.png)
             background-repeat: no-repeat
-            background-position: center
+            justify-content: center
             menu
-                padding-right: 70px
-                margin: 0
+                grid-template-columns: repeat(5, max-content)
+                column-gap: 30px
+                padding-left: 60px
                 a
-                    margin-right: 60px
                     font-family: AGSouvenir, sans-serif
                     font-size: 17px
                     line-height: 58px
 .hd-wrap
-    grid-template-columns: auto 320px
+    grid-template-columns: auto 374px
     .header-baner
-        justify-items: center;
-        align-items: end;
     .header-form
         position: relative
         align-items: center
-        border: 6px solid #a7d1e6
+        border: 6px solid #7EBEE0
         border-radius: 20px
         background: #299fca
         margin-top: -40px
         padding-top: 100px
+        width: 320px
+        justify-self: center
         .decor-line
             position: absolute
             top: 25px
@@ -64,6 +63,8 @@ header
                 font-family: AGLettericaBoldBold, sans-serif
                 font-size: 21px
                 color: #ffffff
+        select+span
+            align-self: baseline !important
         .headerForm
             grid-template-columns: auto auto
             // grid-template-rows: repeat(5, max-content)
@@ -92,18 +93,20 @@ header
                 resize: none
             .form-ladder
                 margin-top: -10px
+            .bottom-o
+                align-self: start
+                justify-self: end
+
 
 .bottom-o
-    // grid-column: 1/3
-    justify-self: end
     border: none
     background: #f2e709
     border-radius: 7px
-    height: 33px
-    width: 100px
+    padding: 8px 25px
     color: #64affc
     font-family: AGLettericaBoldBold, sans-serif
     font-size: 15px
+    text-align: center
     cursor: pointer
     display: block
 
@@ -112,6 +115,93 @@ header
     height: 560px
     background-repeat: no-repeat
     background-size: inherit
-    margin-top: -190px
+    margin-top: -215px
 
+.cloud1
+    height: 494px
+    align-items: end
+    background-image: url(../img/cloud1.png)
+    margin-top: -494px
+    z-index: 9
+    opacity: 0.99
+    .container
+        grid-template-columns: auto auto
+        justify-content: space-between
+        padding-left: 30px
+        .specialOffers
+            margin-right: 85px
+            .specialOffers-item
+                grid-template-columns: repeat(3,auto)
+                align-content: end
+                align-items: center
+                grid-gap: 10px
+                padding: 20px 0
+                &:nth-child(1)
+                    border-bottom: 1px dashed #fff
+                h3
+                    grid-column: 1/4
+                    font-family: ABodoniNovaNrItalic, sans-serif
+                    font-size: 29px
+                    font-weight: 400
+                    margin: 0
+                .specialOffers-txt
+                    grid-column: 2/4
+                    h4
+                        font-family: ColabMed, sans-serif
+                        font-weight: 400
+                        font-size: 17px
+                        margin: 0
+                    p
+                        font-family: ColabThi, sans-serif
+                        font-size: 15px
+                .price
+                    grid-column: 1/3
+                    font-family: AGBenguiatCyrBook, sans-serif
+                    font-size: 27px
+                    justify-self: end
+                .bottom-o
+                    padding: 5px 11px
 
+.toursInfo
+    align-content: end
+    padding-bottom: 30px
+    &-button
+        grid-template-columns: max-content max-content auto
+        column-gap: 5px
+        border-bottom: 1px solid #81FFFF
+        margin-bottom: 20px
+        align-items: end
+        &-specialImg
+            justify-self: end
+            margin-bottom: -1px
+        button
+            text-transform: uppercase
+            text-align: center
+            width: 115px
+            height: 30px
+            border: none
+            border-radius: 7px 7px 0 0
+            background-color: #81FFFF
+            &:nth-child(2)
+                background-color: #299FCA
+                color: #81FFFF
+
+.toursInfo-list
+    .toursInfo-list-ul
+        grid-template-columns: repeat(4, max-content)
+        grid-gap: 10px
+        list-style: none
+        align-items: center
+        align-content: baseline
+        list-style: none
+        li:not([class])
+            font-family: ColabThi, sans-serif
+            font-size: 16px
+        .toursInfo-list-img
+            color: #80FEFF
+            font-size: 12px
+            padding-left: 5px
+        .toursInfo-list-days
+            padding-right: 45px
+            font-family: ColabThi, sans-serif
+            font-size: 16px

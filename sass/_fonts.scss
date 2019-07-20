@@ -16,3 +16,25 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'ABodoniNovaNrItalic';
+    src: url('../fonts/ABodoniNovaNrItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'ColabMed';
+    src: url('../fonts/ColabMed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ColabThi';
+    src: url('../fonts/ColabThi.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AGBenguiatCyrBook';
+    src: url('../fonts/AGBenguiatCyrBook.ttf') format('truetype');
+}

@@ -1,5 +1,7 @@
 *, ::after, ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -21,12 +23,35 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ABodoniNovaNrItalic';
+  src: url("../fonts/ABodoniNovaNrItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ColabMed';
+  src: url("../fonts/ColabMed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ColabThi';
+  src: url("../fonts/ColabThi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'AGBenguiatCyrBook';
+  src: url("../fonts/AGBenguiatCyrBook.ttf") format("truetype");
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
+  color: #fff;
 }
 
 .grid {
@@ -39,7 +64,7 @@ a {
 }
 
 .container {
-  width: 1024px;
+  width: 992px;
   margin: 0 auto;
 }
 
@@ -52,42 +77,37 @@ header {
 
 header .header-navbar .container {
   height: 125px;
-  display: flex;
-  justify-content: flex-end;
   background-image: url(../img/bg-hd-top.png);
   background-repeat: no-repeat;
-  background-position: center;
+  justify-content: center;
 }
 
 header .header-navbar .container menu {
-  padding-right: 70px;
-  margin: 0;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 30px;
+  padding-left: 60px;
 }
 
 header .header-navbar .container menu a {
-  margin-right: 60px;
   font-family: AGSouvenir, sans-serif;
   font-size: 17px;
   line-height: 58px;
 }
 
 .hd-wrap {
-  grid-template-columns: auto 320px;
-}
-
-.hd-wrap .header-baner {
-  justify-items: center;
-  align-items: end;
+  grid-template-columns: auto 374px;
 }
 
 .hd-wrap .header-form {
   position: relative;
   align-items: center;
-  border: 6px solid #a7d1e6;
+  border: 6px solid #7EBEE0;
   border-radius: 20px;
   background: #299fca;
   margin-top: -40px;
   padding-top: 100px;
+  width: 320px;
+  justify-self: center;
 }
 
 .hd-wrap .header-form .decor-line {
@@ -105,6 +125,10 @@ header .header-navbar .container menu a {
   font-family: AGLettericaBoldBold, sans-serif;
   font-size: 21px;
   color: #ffffff;
+}
+
+.hd-wrap .header-form select + span {
+  align-self: baseline !important;
 }
 
 .hd-wrap .header-form .headerForm {
@@ -144,16 +168,20 @@ header .header-navbar .container menu a {
   margin-top: -10px;
 }
 
-.bottom-o {
+.hd-wrap .header-form .headerForm .bottom-o {
+  align-self: start;
   justify-self: end;
+}
+
+.bottom-o {
   border: none;
   background: #f2e709;
   border-radius: 7px;
-  height: 33px;
-  width: 100px;
+  padding: 8px 25px;
   color: #64affc;
   font-family: AGLettericaBoldBold, sans-serif;
   font-size: 15px;
+  text-align: center;
   cursor: pointer;
   display: block;
 }
@@ -163,6 +191,131 @@ header .header-navbar .container menu a {
   height: 560px;
   background-repeat: no-repeat;
   background-size: inherit;
-  margin-top: -190px;
+  margin-top: -215px;
+}
+
+.cloud1 {
+  height: 494px;
+  align-items: end;
+  background-image: url(../img/cloud1.png);
+  margin-top: -494px;
+  z-index: 9;
+  opacity: 0.99;
+}
+
+.cloud1 .container {
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.cloud1 .container .specialOffers {
+  margin-right: 85px;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item {
+  grid-template-columns: repeat(3, auto);
+  align-content: end;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 20px 0;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item:nth-child(1) {
+  border-bottom: 1px dashed #fff;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item h3 {
+  grid-column: 1/4;
+  font-family: ABodoniNovaNrItalic, sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item .specialOffers-txt {
+  grid-column: 2/4;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item .specialOffers-txt h4 {
+  font-family: ColabMed, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item .specialOffers-txt p {
+  font-family: ColabThi, sans-serif;
+  font-size: 15px;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item .price {
+  grid-column: 1/3;
+  font-family: AGBenguiatCyrBook, sans-serif;
+  font-size: 27px;
+  justify-self: end;
+}
+
+.cloud1 .container .specialOffers .specialOffers-item .bottom-o {
+  padding: 5px 11px;
+}
+
+.toursInfo {
+  align-content: end;
+  padding-bottom: 30px;
+}
+
+.toursInfo-button {
+  grid-template-columns: max-content max-content auto;
+  column-gap: 5px;
+  border-bottom: 1px solid #81FFFF;
+  margin-bottom: 20px;
+  align-items: end;
+}
+
+.toursInfo-button-specialImg {
+  justify-self: end;
+  margin-bottom: -1px;
+}
+
+.toursInfo-button button {
+  text-transform: uppercase;
+  text-align: center;
+  width: 115px;
+  height: 30px;
+  border: none;
+  border-radius: 7px 7px 0 0;
+  background-color: #81FFFF;
+}
+
+.toursInfo-button button:nth-child(2) {
+  background-color: #299FCA;
+  color: #81FFFF;
+}
+
+.toursInfo-list .toursInfo-list-ul {
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+  align-content: baseline;
+  list-style: none;
+}
+
+.toursInfo-list .toursInfo-list-ul li:not([class]) {
+  font-family: ColabThi, sans-serif;
+  font-size: 16px;
+}
+
+.toursInfo-list .toursInfo-list-ul .toursInfo-list-img {
+  color: #80FEFF;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.toursInfo-list .toursInfo-list-ul .toursInfo-list-days {
+  padding-right: 45px;
+  font-family: ColabThi, sans-serif;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
