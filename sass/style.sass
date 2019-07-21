@@ -33,10 +33,11 @@ header
                 grid-template-columns: repeat(5, max-content)
                 column-gap: 30px
                 padding-left: 60px
+                align-content: baseline
+                padding-top: 20px
                 a
                     font-family: AGSouvenir, sans-serif
                     font-size: 17px
-                    line-height: 58px
 .hd-wrap
     grid-template-columns: auto 374px
     .header-baner
@@ -96,6 +97,7 @@ header
             .bottom-o
                 align-self: start
                 justify-self: end
+                z-index: 1
 
 
 .bottom-o
@@ -109,6 +111,7 @@ header
     text-align: center
     cursor: pointer
     display: block
+    outline: none
 
 .cloud2
     background-image: url(../img/cloud2.png)
@@ -182,6 +185,8 @@ header
             border: none
             border-radius: 7px 7px 0 0
             background-color: #81FFFF
+            outline: none
+            cursor: pointer
             &:nth-child(2)
                 background-color: #299FCA
                 color: #81FFFF

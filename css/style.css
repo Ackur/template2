@@ -86,12 +86,13 @@ header .header-navbar .container menu {
   grid-template-columns: repeat(5, max-content);
   column-gap: 30px;
   padding-left: 60px;
+  align-content: baseline;
+  padding-top: 20px;
 }
 
 header .header-navbar .container menu a {
   font-family: AGSouvenir, sans-serif;
   font-size: 17px;
-  line-height: 58px;
 }
 
 .hd-wrap {
@@ -171,6 +172,7 @@ header .header-navbar .container menu a {
 .hd-wrap .header-form .headerForm .bottom-o {
   align-self: start;
   justify-self: end;
+  z-index: 1;
 }
 
 .bottom-o {
@@ -184,6 +186,7 @@ header .header-navbar .container menu a {
   text-align: center;
   cursor: pointer;
   display: block;
+  outline: none;
 }
 
 .cloud2 {
@@ -286,6 +289,8 @@ header .header-navbar .container menu a {
   border: none;
   border-radius: 7px 7px 0 0;
   background-color: #81FFFF;
+  outline: none;
+  cursor: pointer;
 }
 
 .toursInfo-button button:nth-child(2) {
