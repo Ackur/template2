@@ -25,6 +25,13 @@
 }
 
 @font-face {
+    font-family: 'colaborate-regular';
+    src: url('../fonts/colaborate-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'ColabMed';
     src: url('../fonts/ColabMed.otf') format('opentype');
 }
@@ -37,4 +44,9 @@
 @font-face {
     font-family: 'AGBenguiatCyrBook';
     src: url('../fonts/AGBenguiatCyrBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ag_letterica_bold';
+    src: url('../fonts/ag_letterica_bold.ttf') format('truetype');
 }

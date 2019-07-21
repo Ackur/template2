@@ -31,6 +31,13 @@
 }
 
 @font-face {
+  font-family: 'colaborate-regular';
+  src: url("../fonts/colaborate-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'ColabMed';
   src: url("../fonts/ColabMed.otf") format("opentype");
 }
@@ -43,6 +50,11 @@
 @font-face {
   font-family: 'AGBenguiatCyrBook';
   src: url("../fonts/AGBenguiatCyrBook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ag_letterica_bold';
+  src: url("../fonts/ag_letterica_bold.ttf") format("truetype");
 }
 
 body {
@@ -321,6 +333,205 @@ header .header-navbar .container menu a {
 .toursInfo-list .toursInfo-list-ul .toursInfo-list-days {
   padding-right: 45px;
   font-family: ColabThi, sans-serif;
+  font-size: 16px;
+}
+
+.touristMap {
+  background-color: #D6E6EF;
+  font-family: ag_letterica_bold, sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.touristMap h3 {
+  font-size: 27px;
+  color: #4690B4;
+  padding-top: 15px;
+}
+
+.touristMap p {
+  font-size: 17px;
+  color: #6AB5D0;
+  margin-bottom: 10px;
+}
+
+.touristMap-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.touristMap-info {
+  position: absolute;
+  top: 185px;
+  left: 300px;
+  background-image: url(../img/info_bg.png);
+  width: 357px;
+  height: 279px;
+}
+
+.touristMap-info-wrap {
+  max-width: 250px;
+  padding: 20px 0px 0 13px;
+  align-content: baseline;
+}
+
+.touristMap-info-item {
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  text-align: left;
+}
+
+.touristMap-info-item img {
+  grid-row: 1/3;
+}
+
+.touristMap-info-item h4 {
+  font-family: ColabMed, sans-serif;
+  font-size: 17px;
+  color: #A4A4A4;
+  font-weight: 100;
+}
+
+.touristMap-info-item p {
+  font-family: ColabThi, sans-serif;
+  font-size: 14px;
+  color: #A4A4A4;
+  font-weight: 100;
+  margin: 0;
+}
+
+.touristMap-info h3 {
+  padding: 0;
+  font-family: ColabThi, sans-serif;
+  font-size: 23px;
+  color: #7D7D7D;
+}
+
+.footer {
+  background-image: url(../img/footerbg.png);
+  font-family: colaborate-regular, sans-serif;
+}
+
+.footer h4 {
+  font-size: 25px;
+  font-weight: 100;
+  text-shadow: #064b73 0 2px 1px;
+}
+
+.footer p {
+  font-family: ColabThi, sans-serif;
+  font-size: 16px;
+}
+
+.footer input, .footer textarea {
+  background-color: #0F6686;
+  padding: 0 10px;
+  width: 199px;
+  height: 37px;
+  border-radius: 7px;
+  outline: none;
+  color: #fff;
+  font-family: ColabThi, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer input::placeholder, .footer textarea::placeholder {
+  color: #5E98AE;
+}
+
+.footer .bottom-o {
+  width: 91px;
+  height: 37px;
+  padding: 0;
+  color: #1380A7;
+  background-color: #D6E6EF;
+  font-family: colaborate-regular, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.footer .container {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: baseline;
+}
+
+.social {
+  justify-items: left;
+}
+
+.follow {
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  margin: 20px 0 30px 0;
+}
+
+.follow h4 {
+  grid-column: 1/3;
+}
+
+.socialLink {
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  grid-gap: 10px;
+}
+
+.socialLink h4 {
+  grid-column: 1/4;
+}
+
+.socialLink a {
+  display: block;
+  text-decoration: none;
+  width: 39px;
+  height: 39px;
+  background-color: #3BB3DE;
+  border-radius: 50%;
+}
+
+.socialLink img {
+  display: block;
+  margin: auto;
+  padding-top: 7px;
+}
+
+.contact {
+  margin-top: 20px;
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.feeback {
+  margin-top: 20px;
+  grid-gap: 10px;
+  justify-content: end;
+}
+
+.feeback textarea {
+  padding-top: 10px;
+  width: 290px;
+  height: 63px;
+  resize: none;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+.feeback .bottom-o {
+  justify-self: end;
+}
+
+.copyright {
+  grid-column: 1/4;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  column-gap: 25px;
+  padding-bottom: 10px;
+}
+
+.copyright .copy {
   font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
