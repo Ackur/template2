@@ -26,11 +26,20 @@
         </nav>
         <div class="header-main">
             <div class="container hd-wrap grid">
-                <div class="header-baner grid">
+                <div class="header-baner">
                     <img src="img/baner-img.png" alt="">
-                    <div class="baner-info"></div>
-                    <a href=""><span></span></a>
-                    <a href=""><span></span></a>
+                    <div class="baner-info">
+                        <div id="text_slide1">
+                            <h2>Singapore</h2>
+                            <p>Malaysia Singapore <br> Super Saver Summer 2011 </p>
+                        </div>
+                        <div id="text_slide2">
+                            <h2>Ukraine</h2>
+                            <p>Crimea Black Sea <br> Super Saver Summer 2019 </p>
+                        </div>
+                    </div>
+                    <a href="" class="slide-prev"><span class="slide-arrow fa fa-chevron-circle-left"></span></a>
+                    <a href="" class="slide-next"><span class="slide-arrow fa fa-chevron-circle-right"></span></a>
                 </div>
                 <div class="header-form grid">
                     <div class="decor-line">
@@ -82,53 +91,61 @@
             </div>
             <div class="toursInfo grid">
                 <div class="toursInfo-button grid">
-                    <button>tours</button>
-                    <button>photos</button>
+                    <input type="radio" checked name="tab" id="tab1">
+                    <label for="tab1">tours</label>
+                    <input type="radio" name="tab" id="tab2">
+                    <label for="tab2">photos</label>
+                    <!-- <button>tours</button>
+                    <button>photos</button> -->
                     <img class="toursInfo-button-specialImg" src="img/special.png" alt="special">
+                    <div class="toursInfo-list tab grid">
+                        <ul class="toursInfo-list-ul grid">
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Lorem Ipsum is simply dummy text simply</li>
+                            <li class="toursInfo-list-days">10 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Printing and typesetting industry typesetting</li>
+                            <li class="toursInfo-list-days">10 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Has been the industry's standard</li>
+                            <li class="toursInfo-list-days">11 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Dummy text ever since the 1500s Ipsum is simpl</li>
+                            <li class="toursInfo-list-days">22 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Lorem Ipsum is simply dummy text simply</li>
+                            <li class="toursInfo-list-days">13 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Printing and typesetting industry Printing</li>
+                            <li class="toursInfo-list-days">17 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Has been the industry's standard</li>
+                            <li class="toursInfo-list-days">19 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+
+                            <li class="toursInfo-list-img fa fa-play-circle"></li>
+                            <li>Dummy text ever since the the industry</li>
+                            <li class="toursInfo-list-days">16 Days</li>
+                            <li><a class="toursInfo-list-details" href="#">more details</a></li>
+                        </ul>
+                    </div>
+                    <div class="toursInfo-list tab">
+                        <img src="img/toursInfo-tab2-506-219.jpg" class="toursInfo-tab2-img" alt="toursInfo-tab2-506-219.jpg">
+                    </div>
                 </div>
-                <div class="toursInfo-list grid">
-                    <ul class="toursInfo-list-ul grid">
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Lorem Ipsum is simply dummy text simply</li>
-                        <li class="toursInfo-list-days">10 Days</li>
-                        <li><a href="#">more details</a></li>
 
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Printing and typesetting industry typesetting</li>
-                        <li class="toursInfo-list-days">10 Days</li>
-                        <li><a href="#">more details</a></li>
-
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Has been the industry's standard</li>
-                        <li class="toursInfo-list-days">11 Days</li>
-                        <li><a href="#">more details</a></li>
-
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Dummy text ever since the 1500s Ipsum is simpl</li>
-                        <li class="toursInfo-list-days">22 Days</li>
-                        <li><a href="#">more details</a></li>
-
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Lorem Ipsum is simply dummy text simply</li>
-                        <li class="toursInfo-list-days">13 Days</li>
-                        <li><a href="#">more details</a></li>
-
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Printing and typesetting industry Printing</li>
-                        <li class="toursInfo-list-days">17 Days</li>
-                        <li><a href="#">more details</a></li>
-
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Has been the industry's standard</li>
-                        <li class="toursInfo-list-days">19 Days</li>
-                        <li><a href="#">more details</a></li>
-
-                        <li class="toursInfo-list-img fa fa-play-circle"></li>
-                        <li>Dummy text ever since the the industry</li>
-                        <li class="toursInfo-list-days">16 Days</li>
-                        <li><a href="#">more details</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
@@ -169,9 +186,9 @@
                 </div>
                 <div class="socialLink grid">
                     <h4>Social media</h4>
-                    <a href="#"><img src="img/twit.png" alt="twiter"></a>
-                    <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="img/in.png" alt="in"></a>
+                    <a href="#" class="socialLink-twitter"><img src="img/twit.png" alt="twiter"></a>
+                    <a href="#" class="socialLink-facebook"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="#" class="socialLink-in"><img src="img/in.png" alt="in"></a>
                 </div>
             </div>
             <div class="contact grid">
@@ -197,6 +214,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,13 @@
 }
 
 @font-face {
+    font-family: 'abighaustitulbrk_extrabold';
+    src: url('../fonts/abighaustitulbrk_extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'AGForeignerRomanMedium';
     src: url('../fonts/AGForeignerRomanMedium.ttf') format('truetype');
     font-weight: normal;
@@ -22,6 +29,13 @@
     src: url('../fonts/ABodoniNovaNrItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
+}
+
+@font-face {
+    font-family: 'a_CooperBlackNr';
+    src: url('../fonts/a_CooperBlackNr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {

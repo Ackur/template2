@@ -17,6 +17,13 @@
 }
 
 @font-face {
+  font-family: 'abighaustitulbrk_extrabold';
+  src: url("../fonts/abighaustitulbrk_extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'AGForeignerRomanMedium';
   src: url("../fonts/AGForeignerRomanMedium.ttf") format("truetype");
   font-weight: normal;
@@ -28,6 +35,13 @@
   src: url("../fonts/ABodoniNovaNrItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: 'a_CooperBlackNr';
+  src: url("../fonts/a_CooperBlackNr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -73,6 +87,7 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+  display: block;
 }
 
 .container {
@@ -105,10 +120,84 @@ header .header-navbar .container menu {
 header .header-navbar .container menu a {
   font-family: AGSouvenir, sans-serif;
   font-size: 17px;
+  transition: .3s ease;
+}
+
+header .header-navbar .container menu a:hover {
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 15px white;
+}
+
+header .header-navbar .container menu a:active {
+  box-shadow: 0 0 4px black;
 }
 
 .hd-wrap {
   grid-template-columns: auto 374px;
+}
+
+.hd-wrap .header-baner {
+  position: relative;
+}
+
+.hd-wrap .header-baner .baner-info {
+  position: relative;
+  font-family: abighaustitulbrk_extrabold, sans-serif;
+  top: -185px;
+  left: 210px;
+  width: 300px;
+}
+
+.hd-wrap .header-baner .baner-info #text_slide1, .hd-wrap .header-baner .baner-info #text_slide2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  color: #127EA5;
+  text-align: center;
+}
+
+.hd-wrap .header-baner .baner-info #text_slide1 h2, .hd-wrap .header-baner .baner-info #text_slide2 h2 {
+  font-size: 51px;
+}
+
+.hd-wrap .header-baner .baner-info #text_slide1 p, .hd-wrap .header-baner .baner-info #text_slide2 p {
+  font-size: 25px;
+  color: #DED90E;
+}
+
+.hd-wrap .header-baner a {
+  z-index: 1;
+}
+
+.hd-wrap .header-baner a .slide-arrow {
+  font-size: 42px;
+  color: #137ea5;
+  opacity: 0.5;
+}
+
+.hd-wrap .header-baner a .slide-arrow:hover {
+  opacity: 0.65;
+  text-shadow: 0 0 15px #fff;
+}
+
+.hd-wrap .header-baner a .slide-arrow:active {
+  opacity: 0.8;
+}
+
+.hd-wrap .header-baner .slide-prev {
+  position: absolute;
+  bottom: 150px;
+  left: 15px;
+}
+
+.hd-wrap .header-baner .slide-next {
+  position: absolute;
+  bottom: 130px;
+  left: 70px;
 }
 
 .hd-wrap .header-form {
@@ -164,7 +253,7 @@ header .header-navbar .container menu a {
   width: 170px;
   height: 30px;
   outline: none;
-  padding: 0 10px;
+  padding: 0 5px;
   border: 3px solid #a7d1e6;
   border-radius: 7px;
   font-family: AGForeignerRomanMedium, sans-serif;
@@ -175,6 +264,7 @@ header .header-navbar .container menu a {
 .hd-wrap .header-form .headerForm textarea {
   height: 60px;
   resize: none;
+  padding-top: 5px;
 }
 
 .hd-wrap .header-form .headerForm .form-ladder {
@@ -199,6 +289,15 @@ header .header-navbar .container menu a {
   cursor: pointer;
   display: block;
   outline: none;
+  transition: color 0.3s ease;
+}
+
+.bottom-o:hover {
+  color: #fff !important;
+}
+
+.bottom-o:active {
+  box-shadow: inset 0 0 3px 0px black;
 }
 
 .cloud2 {
@@ -219,7 +318,7 @@ header .header-navbar .container menu a {
 }
 
 .cloud1 .container {
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   padding-left: 30px;
 }
@@ -278,36 +377,57 @@ header .header-navbar .container menu a {
 .toursInfo {
   align-content: end;
   padding-bottom: 30px;
+  width: 506px;
+  height: 343px;
 }
 
 .toursInfo-button {
   grid-template-columns: max-content max-content auto;
   column-gap: 5px;
-  border-bottom: 1px solid #81FFFF;
-  margin-bottom: 20px;
   align-items: end;
+}
+
+.toursInfo-button input {
+  display: none;
+}
+
+.toursInfo-button input:checked + label {
+  color: #299FCA;
+  background-color: #81FFFF;
+}
+
+.toursInfo-button input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+.toursInfo-button input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
+  display: block;
+}
+
+.toursInfo-button label {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  width: 115px;
+  height: 30px;
+  font-family: AGSouvenir, sans-serif;
+  font-size: 15px;
+  line-height: 32px;
+  border: none;
+  border-radius: 7px 7px 0 0;
+  background-color: #299FCA;
+  color: #81FFFF;
+  outline: none;
+  cursor: pointer;
 }
 
 .toursInfo-button-specialImg {
   justify-self: end;
   margin-bottom: -1px;
+  z-index: 1;
 }
 
-.toursInfo-button button {
-  text-transform: uppercase;
-  text-align: center;
-  width: 115px;
-  height: 30px;
-  border: none;
-  border-radius: 7px 7px 0 0;
-  background-color: #81FFFF;
-  outline: none;
-  cursor: pointer;
-}
-
-.toursInfo-button button:nth-child(2) {
-  background-color: #299FCA;
-  color: #81FFFF;
+.toursInfo-list {
+  grid-column: 1/4;
+  border-top: 1px solid #81FFFF;
+  padding-top: 20px;
 }
 
 .toursInfo-list .toursInfo-list-ul {
@@ -334,6 +454,23 @@ header .header-navbar .container menu a {
   padding-right: 45px;
   font-family: ColabThi, sans-serif;
   font-size: 16px;
+}
+
+.toursInfo-list-details {
+  transition: border .3s ease;
+}
+
+.toursInfo-list-details:hover {
+  border-bottom: 1px solid #fff;
+  color: #f1e50c;
+}
+
+.tab {
+  display: none;
+}
+
+.tab .toursInfo-tab2-img {
+  height: 194px;
 }
 
 .touristMap {
@@ -378,8 +515,9 @@ header .header-navbar .container menu a {
 
 .touristMap-info-item {
   grid-template-columns: repeat(2, auto);
-  grid-gap: 10px;
+  column-gap: 8px;
   text-align: left;
+  margin-bottom: 5px;
 }
 
 .touristMap-info-item img {
@@ -391,6 +529,7 @@ header .header-navbar .container menu a {
   font-size: 17px;
   color: #A4A4A4;
   font-weight: 100;
+  align-self: end;
 }
 
 .touristMap-info-item p {
@@ -435,6 +574,10 @@ header .header-navbar .container menu a {
   font-family: ColabThi, sans-serif;
   font-size: 16px;
   font-weight: 600;
+}
+
+.footer input:focus, .footer textarea:focus {
+  background-color: #79bbd5;
 }
 
 .footer input::placeholder, .footer textarea::placeholder {
@@ -494,6 +637,21 @@ header .header-navbar .container menu a {
   display: block;
   margin: auto;
   padding-top: 7px;
+}
+
+.socialLink-twitter:hover {
+  background-color: #00acee;
+  box-shadow: 0 0 15px #00acee;
+}
+
+.socialLink-facebook:hover {
+  background-color: #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+}
+
+.socialLink-in:hover {
+  background-color: #0e76a8;
+  box-shadow: 0 0 15px #fff;
 }
 
 .contact {

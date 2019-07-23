@@ -15,6 +15,7 @@ body
 a
     text-decoration: none
     color: #fff
+    display: block
 .container
     width: 992px
     margin: 0 auto
@@ -38,9 +39,59 @@ header
                 a
                     font-family: AGSouvenir, sans-serif
                     font-size: 17px
+                    transition: .3s ease
+                    &:hover
+                        border-radius: 15px
+                        padding: 5px
+                        font-weight: bold
+                        box-shadow: 0 0 15px white
+                    &:active
+                        box-shadow: 0 0 4px black
+
 .hd-wrap
     grid-template-columns: auto 374px
     .header-baner
+        position: relative
+        .baner-info
+            position: relative
+            font-family: abighaustitulbrk_extrabold, sans-serif
+            top: -185px
+            left: 210px
+            width: 300px
+            #text_slide1, #text_slide2
+                width: 100%
+                height: 100%
+                position: absolute
+                left: 0
+                opacity: 0
+                color: #127EA5
+                text-align: center
+                h2
+                    font-size: 51px
+                p
+                    font-size: 25px
+                    color: #DED90E
+        a
+            z-index: 1
+            .slide-arrow
+                font-size: 42px
+                color: #137ea5
+                opacity: 0.5
+                &:hover
+                    opacity: 0.65
+                    text-shadow: 0 0 15px #fff
+                &:active
+                    opacity: 0.8
+        .slide-prev
+            position: absolute
+            bottom: 150px
+            left: 15px
+        .slide-next
+            position: absolute
+            bottom: 130px
+            left: 70px
+
+
     .header-form
         position: relative
         align-items: center
@@ -68,7 +119,6 @@ header
             align-self: baseline !important
         .headerForm
             grid-template-columns: auto auto
-            // grid-template-rows: repeat(5, max-content)
             grid-gap: 10px
             justify-content: center
             span
@@ -83,7 +133,7 @@ header
                 width: 170px
                 height: 30px
                 outline: none
-                padding: 0 10px
+                padding: 0 5px
                 border: 3px solid #a7d1e6
                 border-radius: 7px
                 font-family: AGForeignerRomanMedium, sans-serif
@@ -92,6 +142,7 @@ header
             textarea
                 height: 60px
                 resize: none
+                padding-top: 5px
             .form-ladder
                 margin-top: -10px
             .bottom-o
@@ -112,6 +163,11 @@ header
     cursor: pointer
     display: block
     outline: none
+    transition: color 0.3s ease
+    &:hover
+        color: #fff !important
+    &:active
+        box-shadow: inset 0 0 3px 0px black
 
 .cloud2
     background-image: url(../img/cloud2.png)
@@ -128,7 +184,7 @@ header
     z-index: 9
     opacity: 0.99
     .container
-        grid-template-columns: auto auto
+        grid-template-columns: 1fr 1fr
         justify-content: space-between
         padding-left: 30px
         .specialOffers
@@ -168,30 +224,48 @@ header
 .toursInfo
     align-content: end
     padding-bottom: 30px
+    width: 506px
+    height: 343px
     &-button
         grid-template-columns: max-content max-content auto
         column-gap: 5px
-        border-bottom: 1px solid #81FFFF
-        margin-bottom: 20px
         align-items: end
-        &-specialImg
-            justify-self: end
-            margin-bottom: -1px
-        button
+        input
+            display: none
+            &:checked + label
+                color: #299FCA
+                background-color: #81FFFF
+            &:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+            &:nth-of-type(2):checked ~ .tab:nth-of-type(2)
+                display: block
+        label
+            display: block
             text-transform: uppercase
             text-align: center
             width: 115px
             height: 30px
+            font-family: AGSouvenir, sans-serif
+            font-size: 15px
+            line-height: 32px
             border: none
             border-radius: 7px 7px 0 0
-            background-color: #81FFFF
+            // background-color: #81FFFF
+            background-color: #299FCA
+            color: #81FFFF
             outline: none
             cursor: pointer
-            &:nth-child(2)
-                background-color: #299FCA
-                color: #81FFFF
+            // &:nth-child(2)
+            //     background-color: #81FFFF
+            //     color: #299FCA
+        &-specialImg
+            justify-self: end
+            margin-bottom: -1px
+            z-index: 1
 
 .toursInfo-list
+    grid-column: 1/4
+    border-top: 1px solid #81FFFF
+    padding-top: 20px
     .toursInfo-list-ul
         grid-template-columns: repeat(4, max-content)
         grid-gap: 10px
@@ -210,7 +284,18 @@ header
             padding-right: 45px
             font-family: ColabThi, sans-serif
             font-size: 16px
+    &-details
+        transition: border .3s ease
+        &:hover
+            border-bottom: 1px solid #fff
+            color: #f1e50c
 
+.tab
+    display: none
+    .toursInfo-tab2-img
+        height: 194px
+
+    
 .touristMap
     background-color: #D6E6EF
     font-family: ag_letterica_bold, sans-serif
@@ -241,8 +326,9 @@ header
             align-content: baseline
         &-item
             grid-template-columns: repeat(2, auto)
-            grid-gap: 10px
+            column-gap: 8px
             text-align: left
+            margin-bottom: 5px
             img
                 grid-row: 1/3
             h4
@@ -250,6 +336,7 @@ header
                 font-size: 17px
                 color: #A4A4A4
                 font-weight: 100
+                align-self: end
             p
                 font-family: ColabThi, sans-serif
                 font-size: 14px
@@ -283,6 +370,8 @@ header
         font-family: ColabThi, sans-serif
         font-size: 16px
         font-weight: 600
+        &:focus
+            background-color: #79bbd5
     input::placeholder, textarea::placeholder
         color: #5E98AE
     .bottom-o
@@ -323,6 +412,15 @@ header
         display: block
         margin: auto
         padding-top: 7px
+    &-twitter:hover
+        background-color: #00acee
+        box-shadow: 0 0 15px #00acee
+    &-facebook:hover
+        background-color: #3b5998
+        box-shadow: 0 0 15px #3b5998
+    &-in:hover
+        background-color: #0e76a8
+        box-shadow: 0 0 15px #fff
 
 .contact
     margin-top: 20px
