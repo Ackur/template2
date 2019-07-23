@@ -5,21 +5,30 @@
     font-style: normal;
 }
 
+// @font-face {
+//     font-family: 'AGSouvenir';
+//     src: url('../fonts/agsouvenir_regular.ttf') format('truetype');
+// }
 @font-face {
     font-family: 'AGSouvenir';
-    src: url('../fonts/agsouvenir_regular.ttf') format('truetype');
+    src: url('../fonts/agsouvenir_regular.eot');
+    src: local('☺'), url('../fonts/agsouvenir_regular/agsouvenir_regular.woff') format('woff'), url('../fonts/agsouvenir_regular/agsouvenir_regular.ttf') format('truetype'), url('../fonts/agsouvenir_regular/agsouvenir_regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'abighaustitulbrk_extrabold';
-    src: url('../fonts/abighaustitulbrk_extrabold.ttf') format('truetype');
-    font-weight: 800;
+    src: url('../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.eot');
+    src: local('☺'), url('../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.woff') format('woff'), url('../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.ttf') format('truetype'), url('../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.svg') format('svg');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AGForeignerRomanMedium';
-    src: url('../fonts/AGForeignerRomanMedium.ttf') format('truetype');
+    src: url('../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.eot');
+    src: local('☺'), url('../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.woff') format('woff'), url('../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.ttf') format('truetype'), url('../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,7 +42,7 @@
 
 @font-face {
     font-family: 'a_CooperBlackNr';
-    src: url('../fonts/a_CooperBlackNr.ttf') format('truetype');
+    src: url('../fonts/a_CooperBlackNr/a_CooperBlackNr.eot') format('embedded-opentype'), url('../fonts/a_CooperBlackNr/a_CooperBlackNr.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

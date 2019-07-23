@@ -29,22 +29,24 @@ header
             height: 125px
             background-image: url(../img/bg-hd-top.png)
             background-repeat: no-repeat
-            justify-content: center
+            justify-items: center
             menu
-                grid-template-columns: repeat(5, max-content)
-                column-gap: 30px
-                padding-left: 60px
-                align-content: baseline
+                grid-template-columns: repeat(5, auto)
+                grid-gap: 10px
+                align-content: flex-start
+                justify-items: center
+                padding-left: 40px
                 padding-top: 20px
                 a
+                    border-radius: 15px
+                    padding: 5px 10px
                     font-family: AGSouvenir, sans-serif
                     font-size: 17px
-                    transition: .3s ease
+                    transition: all .5s ease
                     &:hover
-                        border-radius: 15px
-                        padding: 5px
-                        font-weight: bold
-                        box-shadow: 0 0 15px white
+                        box-shadow: 0 0 10px #fff
+                        background: #e1ecf2
+                        color: #299fca
                     &:active
                         box-shadow: 0 0 4px black
 
@@ -69,6 +71,7 @@ header
                 h2
                     font-size: 51px
                 p
+                    font-family: a_CooperBlackNr,sans-serif
                     font-size: 25px
                     color: #DED90E
         a
@@ -76,12 +79,12 @@ header
             .slide-arrow
                 font-size: 42px
                 color: #137ea5
-                opacity: 0.5
+                opacity: 0.3
                 &:hover
-                    opacity: 0.65
-                    text-shadow: 0 0 15px #fff
+                    opacity: 0.5
+                    text-shadow: 0 0 10px #5aa4c0
                 &:active
-                    opacity: 0.8
+                    opacity: 0.6
         .slide-prev
             position: absolute
             bottom: 150px
@@ -293,9 +296,12 @@ header
 .tab
     display: none
     .toursInfo-tab2-img
-        height: 194px
+        height: 198px
+        display: block
+        margin: 0 auto
+        border: 5px solid #81fefe
+        border-radius: 7px
 
-    
 .touristMap
     background-color: #D6E6EF
     font-family: ag_letterica_bold, sans-serif

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
@@ -13,19 +14,24 @@
 
 @font-face {
   font-family: 'AGSouvenir';
-  src: url("../fonts/agsouvenir_regular.ttf") format("truetype");
+  src: url("../fonts/agsouvenir_regular.eot");
+  src: local("☺"), url("../fonts/agsouvenir_regular/agsouvenir_regular.woff") format("woff"), url("../fonts/agsouvenir_regular/agsouvenir_regular.ttf") format("truetype"), url("../fonts/agsouvenir_regular/agsouvenir_regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'abighaustitulbrk_extrabold';
-  src: url("../fonts/abighaustitulbrk_extrabold.ttf") format("truetype");
-  font-weight: 800;
+  src: url("../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.eot");
+  src: local("☺"), url("../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.woff") format("woff"), url("../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.ttf") format("truetype"), url("../fonts/abighaustitulbrk_extrabold/abighaustitulbrk_extrabold.svg") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'AGForeignerRomanMedium';
-  src: url("../fonts/AGForeignerRomanMedium.ttf") format("truetype");
+  src: url("../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.eot");
+  src: local("☺"), url("../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.woff") format("woff"), url("../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.ttf") format("truetype"), url("../fonts/AGForeignerRomanMedium/AGForeignerRomanMedium.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -39,7 +45,7 @@
 
 @font-face {
   font-family: 'a_CooperBlackNr';
-  src: url("../fonts/a_CooperBlackNr.ttf") format("truetype");
+  src: url("../fonts/a_CooperBlackNr/a_CooperBlackNr.eot") format("embedded-opentype"), url("../fonts/a_CooperBlackNr/a_CooperBlackNr.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -106,28 +112,30 @@ header .header-navbar .container {
   height: 125px;
   background-image: url(../img/bg-hd-top.png);
   background-repeat: no-repeat;
-  justify-content: center;
+  justify-items: center;
 }
 
 header .header-navbar .container menu {
-  grid-template-columns: repeat(5, max-content);
-  column-gap: 30px;
-  padding-left: 60px;
-  align-content: baseline;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  align-content: flex-start;
+  justify-items: center;
+  padding-left: 40px;
   padding-top: 20px;
 }
 
 header .header-navbar .container menu a {
+  border-radius: 15px;
+  padding: 5px 10px;
   font-family: AGSouvenir, sans-serif;
   font-size: 17px;
-  transition: .3s ease;
+  transition: all .5s ease;
 }
 
 header .header-navbar .container menu a:hover {
-  border-radius: 15px;
-  padding: 5px;
-  font-weight: bold;
-  box-shadow: 0 0 15px white;
+  box-shadow: 0 0 10px #fff;
+  background: #e1ecf2;
+  color: #299fca;
 }
 
 header .header-navbar .container menu a:active {
@@ -165,6 +173,7 @@ header .header-navbar .container menu a:active {
 }
 
 .hd-wrap .header-baner .baner-info #text_slide1 p, .hd-wrap .header-baner .baner-info #text_slide2 p {
+  font-family: a_CooperBlackNr,sans-serif;
   font-size: 25px;
   color: #DED90E;
 }
@@ -176,16 +185,16 @@ header .header-navbar .container menu a:active {
 .hd-wrap .header-baner a .slide-arrow {
   font-size: 42px;
   color: #137ea5;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .hd-wrap .header-baner a .slide-arrow:hover {
-  opacity: 0.65;
-  text-shadow: 0 0 15px #fff;
+  opacity: 0.5;
+  text-shadow: 0 0 10px #5aa4c0;
 }
 
 .hd-wrap .header-baner a .slide-arrow:active {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .hd-wrap .header-baner .slide-prev {
@@ -470,7 +479,11 @@ header .header-navbar .container menu a:active {
 }
 
 .tab .toursInfo-tab2-img {
-  height: 194px;
+  height: 198px;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #81fefe;
+  border-radius: 7px;
 }
 
 .touristMap {
