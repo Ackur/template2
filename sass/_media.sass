@@ -1,0 +1,114 @@
+// /*
+//   ##Device = Desktops
+//   ##Screen = 1281px to higher resolution desktops
+// */
+
+@media (min-width: 1281px)
+  //CSS
+
+// /*
+//   ##Device = Laptops, Desktops
+//   ##Screen = B/w 1025px to 1280px
+// */
+
+@media (min-width: 1025px) and (max-width: 1280px)
+  //CSS
+
+// /*
+//   ##Device = Tablets, Ipads (portrait)
+//   ##Screen = B/w 768px to 1024px
+// */
+
+@media (min-width: 768px) and (max-width: 1024px)
+    .header-navbar
+        .container
+            background-size: 95%
+            background-position-x: center
+            menu
+                grid-gap: inherit !important
+                padding-left: 125px !important
+                padding-top: 10px !important
+    .hd-wrap
+        grid-template-columns: 50% 50%
+        .header-baner
+            justify-items: center
+            align-items: center
+            img
+                max-width: 95%
+                height: 50%
+            .baner-info
+                top: -240px
+                left: 50px
+                width: 100%
+                .text-slider
+                    width: 75% !important
+                    h2
+                        font-size: 40px !important
+                    p
+                        font-size: 20px !important
+            .slide-arrow
+                display: none
+    .cloud1
+        .container
+            grid-template-columns: 34% 1fr
+            padding-left: inherit
+            .specialOffers
+                align-content: end
+                margin-right: inherit
+                .specialOffers-item
+                    grid-gap: 5px
+                    padding: inherit
+                    padding-bottom: 10px
+                    padding-left: 10px
+
+    .toursInfo
+        width: 100%
+        justify-self: end
+        .toursInfo-button
+            padding: 0 10px
+            .toursInfo-list-ul
+                justify-content: space-around
+                .toursInfo-list-img
+                    padding-left: inherit !important
+                .toursInfo-list-days
+                    padding-right: inherit !important
+
+    .touristMap-img
+        width: 90%
+
+    .footer
+        background-size: cover
+        p
+            display: inline-block
+        .container
+            grid-template-columns: 1fr 1fr
+            grid-gap: 30px
+            .contact
+                order: -1
+                grid-column: 1/3
+            .copyright
+                grid-column: 1/3
+
+// /*
+//   ##Device = Tablets, Ipads (landscape)
+//   ##Screen = B/w 768px to 1024px
+// */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+  //CSS
+
+// /*
+//   ##Device = Low Resolution Tablets, Mobiles (Landscape)
+//   ##Screen = B/w 481px to 767px
+// */
+
+@media (min-width: 481px) and (max-width: 767px)
+  //CSS
+
+// /*
+//   ##Device = Most of the Smartphones Mobiles (Portrait)
+//   ##Screen = B/w 320px to 479px
+// */
+
+@media (min-width: 320px) and (max-width: 480px)
+  //CSS

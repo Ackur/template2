@@ -15,9 +15,8 @@ body
 a
     text-decoration: none
     color: #fff
-    display: block
 .container
-    width: 992px
+    max-width: 992px
     margin: 0 auto
 header
     background-image: url(../img/bg-body.png)
@@ -37,11 +36,13 @@ header
                 justify-items: center
                 padding-left: 40px
                 padding-top: 20px
-                a
+                li
                     border-radius: 15px
                     padding: 5px 10px
                     font-family: AGSouvenir, sans-serif
                     font-size: 17px
+                    list-style: none
+                    cursor: pointer
                     transition: all .5s ease
                     &:hover
                         box-shadow: 0 0 10px #fff
@@ -57,7 +58,7 @@ header
         .baner-info
             position: relative
             font-family: abighaustitulbrk_extrabold, sans-serif
-            top: -185px
+            top: -245px
             left: 210px
             width: 300px
             #text_slide1, #text_slide2
@@ -275,7 +276,6 @@ header
         list-style: none
         align-items: center
         align-content: baseline
-        list-style: none
         li:not([class])
             font-family: ColabThi, sans-serif
             font-size: 16px
@@ -457,3 +457,7 @@ header
     padding-bottom: 10px
     .copy
         font-size: 16px
+
+
+
+@import 'media'

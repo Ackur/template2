@@ -12,27 +12,27 @@
 
 <body>
     <header>
-        <nav role="navigation" class="header-navbar">
+        <nav class="header-navbar">
             <div class="container grid">
                 <menu class="grid">
-                    <a href="#">Home</a>
-                    <a href="#">Packages</a>
-                    <a href="#">Flights</a>
-                    <a href="#">Trains</a>
-                    <a href="#">Reach us</a>
+                    <li>Home</li>
+                    <li>Packages</li>
+                    <li>Flights</li>
+                    <li>Trains</li>
+                    <li>Reach us</li>
                 </menu>
             </div>
         </nav>
         <div class="header-main">
             <div class="container hd-wrap grid">
-                <div class="header-baner">
+                <div class="header-baner grid">
                     <img src="img/baner-img.png" alt="">
                     <div class="baner-info">
-                        <div id="text_slide1">
+                        <div id="text_slide1" class="text-slider">
                             <h2>Singapore</h2>
                             <p>Malaysia Singapore <br> Super Saver Summer 2011 </p>
                         </div>
-                        <div id="text_slide2">
+                        <div id="text_slide2" class="text-slider">
                             <h2>Ukraine</h2>
                             <p>Crimea Black Sea <br> Super Saver Summer 2019 </p>
                         </div>
@@ -44,13 +44,13 @@
                     <div class="decor-line">
                         <span>Online Booking</span>
                     </div>
-                    <form action="" class="headerForm grid">
+                    <form class="headerForm grid">
                         <span>Name :</span>
                         <input type="text">
                         <span>email :</span>
                         <input type="email" required>
                         <span>Package :</span>
-                        <select name="" id="">
+                        <select name="name">
                             <option value="AfricaPackages">Africa Packages</option>
                             <option value="UnitedKingdom">United Kingdom</option>
                             <option value="UkraineKingdom">Kingdom of Ukraine</option>
@@ -73,7 +73,7 @@
                     <img src="img/Layer19.png" alt="layer19">
                     <div class="specialOffers-txt">
                         <h4>1914 translation</h4>
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was</p>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain</p>
                     </div>
                     <span class="price">700$</span>
                     <div class="bottom-o">Read more</div>
@@ -82,7 +82,7 @@
                     <img src="img/Layer20.png" alt="layer19">
                     <div class="specialOffers-txt">
                         <h4>1914 translation</h4>
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was</p>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain</p>
                     </div>
                     <span class="price">700$</span>
                     <div class="bottom-o">Read more</div>
@@ -201,9 +201,9 @@
             </div>
             <div class="feeback grid">
                 <h4>Contact form</h4>
-                <input type="text" name="" placeholder="Name">
-                <input type="email" name="" placeholder="email address">
-                <input type="tel" name="" placeholder="phone">
+                <input type="text" name="feeback" placeholder="Name">
+                <input type="email" name="feeback" placeholder="email address">
+                <input type="tel" name="feeback" placeholder="phone">
                 <textarea name="msg" placeholder="Message"></textarea>
                 <button type="submit" class="bottom-o">Submit</button>
             </div>
