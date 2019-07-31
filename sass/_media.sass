@@ -33,11 +33,8 @@
         padding: 0 20px
         column-gap: 10px
         .header-baner
-            // justify-items: center
             align-items: center
             img
-                // max-width: 95%
-                // height: 50%
             .baner-info
                 top: -240px
                 left: 80px
@@ -64,7 +61,6 @@
                     grid-gap: 5px
                     padding: inherit
                     padding-bottom: 10px
-                    padding-left: 10px
 
     .toursInfo
         justify-self: end
@@ -87,9 +83,21 @@
         .container
             grid-template-columns: 1fr 1fr
             grid-gap: 30px
+            justify-items: baseline
+            .social
+                grid-column: 1/3
+                grid-template-columns: 1fr 1fr
+                align-items: center
+                column-gap: 45px
+                .follow
+                    margin: inherit
+                    input
+                        width: inherit
+                        max-width: 199px
             .contact
                 order: -1
-                grid-column: 1/3
+            .feeback
+                order: -1
             .copyright
                 grid-column: 1/3
 
