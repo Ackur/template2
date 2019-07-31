@@ -144,11 +144,16 @@ header .header-navbar .container menu li:active {
 }
 
 .hd-wrap {
-  grid-template-columns: auto 374px;
+  grid-template-columns: 65% 1fr;
+  justify-items: end;
 }
 
 .hd-wrap .header-baner {
   position: relative;
+}
+
+.hd-wrap .header-baner > img {
+  max-width: 100%;
 }
 
 .hd-wrap .header-baner .baner-info {
@@ -212,14 +217,12 @@ header .header-navbar .container menu li:active {
 
 .hd-wrap .header-form {
   position: relative;
-  align-items: center;
   border: 6px solid #7EBEE0;
   border-radius: 20px;
   background: #299fca;
   margin-top: -40px;
   padding-top: 100px;
   width: 320px;
-  justify-self: center;
 }
 
 .hd-wrap .header-form .decor-line {
@@ -331,10 +334,12 @@ header .header-navbar .container menu li:active {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   padding-left: 30px;
+  width: 100%;
 }
 
 .cloud1 .container .specialOffers {
   margin-right: 85px;
+  max-width: 370px;
 }
 
 .cloud1 .container .specialOffers .specialOffers-item {
@@ -706,7 +711,7 @@ header .header-navbar .container menu li:active {
   font-size: 16px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .header-navbar .container {
     background-size: 95%;
     background-position-x: center;
@@ -717,19 +722,16 @@ header .header-navbar .container menu li:active {
     padding-top: 10px !important;
   }
   .hd-wrap {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 1fr;
+    padding: 0 20px;
+    column-gap: 10px;
   }
   .hd-wrap .header-baner {
-    justify-items: center;
     align-items: center;
-  }
-  .hd-wrap .header-baner img {
-    max-width: 95%;
-    height: 50%;
   }
   .hd-wrap .header-baner .baner-info {
     top: -240px;
-    left: 50px;
+    left: 80px;
     width: 100%;
   }
   .hd-wrap .header-baner .baner-info .text-slider {
@@ -744,9 +746,13 @@ header .header-navbar .container menu li:active {
   .hd-wrap .header-baner .slide-arrow {
     display: none;
   }
+  .hd-wrap .header-form {
+    width: 290px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .cloud1 .container {
-    grid-template-columns: 34% 1fr;
-    padding-left: inherit;
+    padding-left: 10px;
   }
   .cloud1 .container .specialOffers {
     align-content: end;
@@ -759,7 +765,6 @@ header .header-navbar .container menu li:active {
     padding-left: 10px;
   }
   .toursInfo {
-    width: 100%;
     justify-self: end;
   }
   .toursInfo .toursInfo-button {

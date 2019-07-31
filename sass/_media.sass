@@ -19,7 +19,7 @@
 //   ##Screen = B/w 768px to 1024px
 // */
 
-@media (min-width: 768px) and (max-width: 1024px)
+@media only screen and  (max-width: 1024px)
     .header-navbar
         .container
             background-size: 95%
@@ -29,16 +29,18 @@
                 padding-left: 125px !important
                 padding-top: 10px !important
     .hd-wrap
-        grid-template-columns: 50% 50%
+        grid-template-columns: 60% 1fr
+        padding: 0 20px
+        column-gap: 10px
         .header-baner
-            justify-items: center
+            // justify-items: center
             align-items: center
             img
-                max-width: 95%
-                height: 50%
+                // max-width: 95%
+                // height: 50%
             .baner-info
                 top: -240px
-                left: 50px
+                left: 80px
                 width: 100%
                 .text-slider
                     width: 75% !important
@@ -48,10 +50,13 @@
                         font-size: 20px !important
             .slide-arrow
                 display: none
+        .header-form
+            width: 290px
+            padding-left: 10px
+            padding-right: 10px
     .cloud1
         .container
-            grid-template-columns: 34% 1fr
-            padding-left: inherit
+            padding-left: 10px
             .specialOffers
                 align-content: end
                 margin-right: inherit
@@ -62,7 +67,6 @@
                     padding-left: 10px
 
     .toursInfo
-        width: 100%
         justify-self: end
         .toursInfo-button
             padding: 0 10px

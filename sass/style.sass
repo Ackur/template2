@@ -52,9 +52,12 @@ header
                         box-shadow: 0 0 4px black
 
 .hd-wrap
-    grid-template-columns: auto 374px
+    grid-template-columns: 65% 1fr
+    justify-items: end
     .header-baner
         position: relative
+        &>img
+            max-width: 100%
         .baner-info
             position: relative
             font-family: abighaustitulbrk_extrabold, sans-serif
@@ -98,14 +101,12 @@ header
 
     .header-form
         position: relative
-        align-items: center
         border: 6px solid #7EBEE0
         border-radius: 20px
         background: #299fca
         margin-top: -40px
         padding-top: 100px
         width: 320px
-        justify-self: center
         .decor-line
             position: absolute
             top: 25px
@@ -191,8 +192,10 @@ header
         grid-template-columns: 1fr 1fr
         justify-content: space-between
         padding-left: 30px
+        width: 100%
         .specialOffers
             margin-right: 85px
+            max-width: 370px
             .specialOffers-item
                 grid-template-columns: repeat(3,auto)
                 align-content: end
