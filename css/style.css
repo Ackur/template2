@@ -838,6 +838,7 @@ header .header-navbar .container menu li:active {
     row-gap: 20px;
   }
   .hd-wrap .header-baner .baner-info {
+    display: none;
     top: -135px;
     left: 120px;
   }
