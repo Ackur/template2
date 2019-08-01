@@ -98,6 +98,7 @@
                 order: -1
             .feeback
                 order: -1
+                margin-top: 0
             .copyright
                 grid-column: 1/3
 
@@ -124,6 +125,8 @@
         .header-navbar
             .container
                 height: 95px
+                background-size: cover
+                background-position: initial
                 menu
                     display: none
 
@@ -133,7 +136,6 @@
         row-gap: 20px
         .header-baner
             .baner-info
-                display: none
                 top: -135px
                 left: 120px
         .header-form
@@ -142,8 +144,6 @@
             .headerForm
                 textarea
                     z-index: 1
-
-
 
     .cloud1
         height: auto
@@ -185,5 +185,35 @@
 //   ##Screen = B/w 320px to 479px
 // */
 
-@media (min-width: 320px) and (max-width: 480px)
-  //CSS
+@media only screen and (max-width: 480px)
+    .hd-wrap
+        padding: 0
+        .header-baner
+            overflow: hidden
+        .header-form
+            width: 95%
+        .header-baner
+            .baner-info
+                top: -102px
+                left: 12px
+                #text_slide1, #text_slide2
+                    text-align: right
+                .text-slider
+                    h2
+                        font-size: 32px !important
+                    p
+                        font-size: 17px !important
+
+    .toursInfo
+        display: none
+
+    .cloud1
+        margin-top: -450px
+        .container
+            padding-top: 150px
+
+    .footer
+        .container
+            .copyright
+                p
+                    font-size: 12px
