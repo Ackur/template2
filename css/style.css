@@ -733,7 +733,7 @@ header .header-navbar .container menu li:active {
   .hd-wrap .header-baner .baner-info {
     top: -240px;
     left: 80px;
-    width: 100%;
+    width: 315px;
   }
   .hd-wrap .header-baner .baner-info .text-slider {
     width: 75% !important;
@@ -757,7 +757,7 @@ header .header-navbar .container menu li:active {
   }
   .cloud1 .container .specialOffers {
     align-content: end;
-    margin-right: inherit;
+    margin-right: 0;
   }
   .cloud1 .container .specialOffers .specialOffers-item {
     grid-gap: 5px;
@@ -814,6 +814,77 @@ header .header-navbar .container menu li:active {
   }
   .footer .container .copyright {
     grid-column: 1/3;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    background-size: initial;
+  }
+  header .cloud2 {
+    background-size: auto;
+    background-position: right;
+    margin-top: -270px;
+  }
+  header .header-navbar .container {
+    height: 95px;
+  }
+  header .header-navbar .container menu {
+    display: none;
+  }
+  .hd-wrap {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 20px;
+  }
+  .hd-wrap .header-baner .baner-info {
+    top: -135px;
+    left: 120px;
+  }
+  .hd-wrap .header-form {
+    margin: 0;
+    width: 90%;
+  }
+  .hd-wrap .header-form .headerForm textarea {
+    z-index: 1;
+  }
+  .cloud1 {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin-top: -530px;
+  }
+  .cloud1 .container {
+    grid-template-columns: 1fr;
+    padding-top: 230px;
+    padding-right: 10px;
+    justify-items: center;
+    row-gap: 20px;
+  }
+  .footer .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: -webkit-center;
+  }
+  .footer .container .social {
+    grid-column: inherit;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .footer .container .copyright {
+    grid-column: inherit;
+    grid-template-columns: 1fr;
+  }
+  .touristMap-info {
+    display: none;
+  }
+  .toursInfo {
+    justify-self: inherit;
+    width: inherit;
+    max-width: 460px;
+  }
+  .toursInfo .toursInfo-button {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
