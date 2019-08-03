@@ -833,7 +833,7 @@ header .header-navbar .container menu .menu li:active {
   header .cloud2 {
     background-size: auto;
     background-position: right;
-    margin-top: -270px;
+    margin-top: -327px;
   }
   header .header-navbar .container {
     height: 95px;
@@ -914,7 +914,7 @@ header .header-navbar .container menu .menu li:active {
     height: auto;
     background-size: cover;
     background-position: center;
-    margin-top: -530px;
+    margin-top: -500px;
   }
   .cloud1 .container {
     grid-template-columns: 1fr;
