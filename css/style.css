@@ -899,8 +899,14 @@ header .header-navbar .container menu .menu li:active {
     margin: 0;
     width: 90%;
   }
+  .hd-wrap .header-form .headerForm {
+    grid-template-columns: auto 1fr;
+  }
   .hd-wrap .header-form .headerForm textarea {
     z-index: 1;
+  }
+  .hd-wrap .header-form .headerForm input, .hd-wrap .header-form .headerForm select, .hd-wrap .header-form .headerForm textarea {
+    width: 100%;
   }
   .cloud1 {
     height: auto;
