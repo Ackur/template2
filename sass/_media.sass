@@ -19,12 +19,12 @@
 //   ##Screen = B/w 768px to 1024px
 // */
 
-@media only screen and  (max-width: 1024px)
+@media only screen and (max-width: 1024px)
     .header-navbar
         .container
             background-size: 95%
             background-position-x: center
-            menu
+            .menu
                 grid-gap: inherit !important
                 padding-left: 125px !important
                 padding-top: 10px !important
@@ -37,7 +37,7 @@
             img
             .baner-info
                 top: -240px
-                left: 80px
+                // left: 80px
                 width: 315px
                 .text-slider
                     width: 75% !important
@@ -127,8 +127,48 @@
                 height: 95px
                 background-size: cover
                 background-position: initial
+                #mobile-menu
+                    &:checked + menu .menu
+                        display: grid
+                    &:checked + menu label::after
+                        content: attr(data-close)
+                        background: #e1ecf2
+                        box-shadow: inset 0 0 4px 0px #127ea5
+                        transition: .3s
                 menu
-                    display: none
+                    width: 100%
+                    justify-items: center !important
+                    label
+                        display: block
+                        margin-top: 9px
+                        text-align: center
+                        font-family: colaborate-regular, sans-serif
+                        font-weight: bold
+                        color: #127ea5
+                        &::after
+                            content: attr(data-open)
+                            display: block
+                            border: 3px solid #a7d1e6
+                            border-radius: 7px
+                            background: #fff
+                            padding: 5px 8px
+                    .menu
+                        display: none
+                        background: #4cb2e7
+                        position: relative
+                        top: 50px
+                        padding: 0 !important
+                        justify-items: stretch
+                        grid-template-columns: 1fr
+                        width: 98%
+                        text-align: center
+                        border-radius: 7px
+                        border: 7px solid #7ebee0
+                        z-index: 1
+                        li
+                            border-radius: unset
+                            padding: 15px 0px
+
 
     .hd-wrap
         grid-template-columns: 1fr
@@ -137,7 +177,7 @@
         .header-baner
             .baner-info
                 top: -135px
-                left: 120px
+                // left: 120px
         .header-form
             margin: 0
             width: 90%
@@ -161,14 +201,19 @@
         .container
             grid-template-columns: 1fr
             justify-items: center
-            text-align: -webkit-center
+            text-align: center
             .social
                 grid-column: inherit
                 grid-template-columns: 1fr
                 grid-gap: 30px
+                justify-items: center
             .copyright
                 grid-column: inherit
                 grid-template-columns: 1fr
+            .feeback
+                justify-items: center
+                .bottom-o
+                    width: 100%
 
     .touristMap-info
         display: none
@@ -195,7 +240,7 @@
         .header-baner
             .baner-info
                 top: -102px
-                left: 12px
+                // left: 12px
                 #text_slide1, #text_slide2
                     text-align: right
                 .text-slider
@@ -203,6 +248,10 @@
                         font-size: 32px !important
                     p
                         font-size: 17px !important
+    menu
+        justify-items: start !important
+        label
+            margin-left: 235px
 
     .toursInfo
         display: none

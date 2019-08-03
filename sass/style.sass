@@ -29,27 +29,32 @@ header
             background-image: url(../img/bg-hd-top.png)
             background-repeat: no-repeat
             justify-items: center
+            #mobile-menu
+                display: none
             menu
-                grid-template-columns: repeat(5, auto)
-                grid-gap: 10px
-                align-content: flex-start
-                justify-items: center
-                padding-left: 40px
-                padding-top: 20px
-                li
-                    border-radius: 15px
-                    padding: 5px 10px
-                    font-family: AGSouvenir, sans-serif
-                    font-size: 17px
-                    list-style: none
-                    cursor: pointer
-                    transition: all .5s ease
-                    &:hover
-                        box-shadow: 0 0 10px #fff
-                        background: #e1ecf2
-                        color: #299fca
-                    &:active
-                        box-shadow: 0 0 4px black
+                label
+                    display: none
+                .menu
+                    grid-template-columns: repeat(6, auto)
+                    grid-gap: 10px
+                    align-content: flex-start
+                    justify-items: center
+                    padding-left: 40px
+                    padding-top: 20px
+                    li
+                        border-radius: 15px
+                        padding: 5px 10px
+                        font-family: AGSouvenir, sans-serif
+                        font-size: 17px
+                        list-style: none
+                        cursor: pointer
+                        transition: all .5s ease
+                        &:hover
+                            box-shadow: 0 0 10px #fff
+                            background: #e1ecf2
+                            color: #299fca
+                        &:active
+                            box-shadow: 0 0 4px black
 
 .hd-wrap
     grid-template-columns: 65% 1fr
@@ -62,8 +67,8 @@ header
             position: relative
             font-family: abighaustitulbrk_extrabold, sans-serif
             top: -245px
-            left: 210px
             width: 300px
+            margin: 0 auto
             #text_slide1, #text_slide2
                 width: 100%
                 height: 100%
@@ -231,7 +236,7 @@ header
 .toursInfo
     align-content: end
     padding-bottom: 30px
-    width: 500px
+    width: 507px
     height: 343px
     &-button
         grid-template-columns: max-content max-content auto
@@ -263,6 +268,7 @@ header
         &-specialImg
             justify-self: end
             margin-bottom: -1px
+            margin-right: -1px
             z-index: 1
 
 .toursInfo-list
