@@ -986,6 +986,10 @@ header .header-navbar .container menu .menu li:active {
   .cloud1 .container {
     padding-top: 150px;
   }
+  .cloud1 .container .specialOffers .specialOffers-item {
+    grid-gap: 10px;
+    padding: 20px 0;
+  }
   .footer .container .copyright p {
     font-size: 12px;
   }
