@@ -898,6 +898,8 @@ header .header-navbar .container menu .menu li:active {
   .hd-wrap .header-form {
     margin: 0;
     width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .hd-wrap .header-form .headerForm {
     grid-template-columns: auto 1fr;
@@ -968,6 +970,8 @@ header .header-navbar .container menu .menu li:active {
   }
   .hd-wrap .header-form {
     width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .hd-wrap .header-baner .baner-info {
     top: -102px;
